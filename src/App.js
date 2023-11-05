@@ -41,11 +41,11 @@ function App() {
     // per-year results
     const yearlyData = [];
     console.log(userInput);
-    let intialSavings = currentSavings;
     let currentSavings = +userInput["current-savings"]; // feel free to change the shape of this input object!
     const yearlyContribution = +userInput["yearly-contribution"]; // as mentioned: feel free to change the shape...
     const expectedReturn = +userInput["expected-return"] / 100;
     const duration = +userInput["duration"];
+    let intialSavings = currentSavings;
 
     // The below code calculates yearly results (total savings, interest etc)
     for (let i = 0; i < duration; i++) {
